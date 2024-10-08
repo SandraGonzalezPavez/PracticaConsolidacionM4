@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado</title>
+    <link rel="stylesheet" href="./assets/css/BootstrapcCSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body onload="asignarEventos()">
+
+    <h2>¡Realiza tu compra con nosotros!</h2>
+    <div class="card" style="width: 18rem;">
+        <img src="./assets/img/leche.jpeg" class="card-img-top" alt="leche">
+        <div class="card-body">
+            <h4 class="card-title">Leche Entera Colun</h4>
+            <p class="card-text">Leche natural entera Colun es obtenida a partir de leche fresca que sólo es sometida a enfriamiento, pasteurización y estandarización antes del tratamiento UHT (Ultra High Temperatura), a 138 °C por 4 segundos. Esta leche al ser tratada y envasada en su lugar de origen, conserva sus características nutricionales y organolépticas.</p>
+            <button class="btn btn-primary btn-agregar" id="btn-agregar">Agregar</button>
+            <div class="cantidad" style="display: none; margin-top: 10px;">
+                <label>Cantidad:</label>
+                <div class="input-group" style="max-width: 150px;">
+                    <button class="btn btn-secondary btn-decrement" type="button">–</button>
+                    <input type="number" class="form-control text-center cantidad-input" min="1" value="1">
+                    <button class="btn btn-secondary btn-increment" type="button">+</button>
+                </div>
+                <button class="btn btn-success btn-confirmar" style="margin-top: 10px;">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="./assets/img/panDeMolde.jpeg" class="card-img-top" alt="panDeMolde">
+        <div class="card-body">
+            <h4 class="card-title">Pan de Molde Ideal</h4>
+            <p class="card-text">Disfruta de un momento exquisito con el pan de molde de Ideal, en su formato de 700 g. Producto libre de colesterol y bajo en grasa total, especial para compartir en familia.</p>
+            <button class="btn btn-primary btn-agregar" id="btn-agregar">Agregar</button>
+            <div class="cantidad" style="display: none; margin-top: 10px;">
+                <label>Cantidad:</label>
+                <div class="input-group" style="max-width: 150px;">
+                    <button class="btn btn-secondary btn-decrement" type="button">–</button>
+                    <input type="number" class="form-control text-center cantidad-input" min="1" value="1">
+                    <button class="btn btn-secondary btn-increment" type="button">+</button>
+                </div>
+                <button class="btn btn-success btn-confirmar" style="margin-top: 10px;">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="./assets/img/queso.jpg" class="card-img-top" alt="queso">
+        <div class="card-body">
+            <h4 class="card-title">Queso Ranco Colun</h4>
+            <p class="card-text">Queso ranco laminado de Colun, contenido 250 g. Elaborado en origen. Naturalmente sin
+                lactosa. Queso semi-duro, sin corteza, de un sabor suave a pronunciado, color amarillo suave, textura de
+                masacerrada con algunos ojos pequeños, uniformes y bien distribuidos, masa firme pero flexible.</p>
+            <button class="btn btn-primary btn-agregar" id="btn-agregar">Agregar</button>
+            <div class="cantidad" style="display: none; margin-top: 10px;">
+                <label>Cantidad:</label>
+                <div class="input-group" style="max-width: 150px;">
+                    <button class="btn btn-secondary btn-decrement" type="button">–</button>
+                    <input type="number" class="form-control text-center cantidad-input" min="1" value="1">
+                    <button class="btn btn-secondary btn-increment" type="button">+</button>
+                </div>
+                <button class="btn btn-success btn-confirmar" style="margin-top: 10px;">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="./assets/img/mermelada.jpg" class="card-img-top" alt="mermelada">
+        <div class="card-body">
+            <h5 class="card-title">Mermelada En línea</h5>
+            <p class="card-text">Mermelada En Línea frutilla, 200 g. Producto sin gluten certificado por fundación
+                convivir. Características: Mermeladas y dulces - En Línea - Alto en azúcar - Envase frasco - Contenido
+                200 g.</p>
+            <button class="btn btn-primary btn-agregar" id="btn-agregar">Agregar</button>
+            <div class="cantidad" style="display: none; margin-top: 10px;">
+                <label>Cantidad:</label>
+                <div class="input-group" style="max-width: 150px;">
+                    <button class="btn btn-secondary btn-decrement" type="button">–</button>
+                    <input type="number" class="form-control text-center cantidad-input" min="1" value="1">
+                    <button class="btn btn-secondary btn-increment" type="button">+</button>
+                </div>
+                <button class="btn btn-success btn-confirmar" style="margin-top: 10px;">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="./assets/img/azucar.jpeg" class="card-img-top" alt="azucar">
+        <div class="card-body">
+            <h4 class="card-title">Azúcar Iansa</h4>
+            <p class="card-text">Azúcar Blanca IANSA® para acompañar todas tus preparaciones, desde un rico café en la
+                mañana, hasta un exquisito queque para compartir en familia. Por eso, deja que tu imaginación vuele y
+                sigue viviendo cada momento de tu vida con la dulzura de IANSA®. Formato 1kg. Dulzura, tradición y
+                calidad. Producto sin gluten certificado por fundación convivir. Producto certificado Kosher.</p>
+            <button class="btn btn-primary btn-agregar" id="btn-agregar">Agregar</button>
+            <div class="cantidad" style="display: none; margin-top: 10px;">
+                <label>Cantidad:</label>
+                <div class="input-group" style="max-width: 150px;">
+                    <button class="btn btn-secondary btn-decrement" type="button">–</button>
+                    <input type="number" class="form-control text-center cantidad-input" min="1" value="1">
+                    <button class="btn btn-secondary btn-increment" type="button">+</button>
+                </div>
+                <button class="btn btn-success btn-confirmar" style="margin-top: 10px;">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="card mb-3" id="card-total" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-5">
+                <img src="./assets/img/carro.jpeg" class="img-fluid rounded-start" id="img-total" alt="carro">
+            </div>
+            <div class="col-md-7">
+                <div class="card-body">
+                    <h5 class="card-title">Detalle de la compra</h5>
+                    <div class="card-text" id="DetalleCompra"></div>
+                    <p class="card-text"><small class="text-body-secondary"></small></p>
+                </div>
+            </div>
+        </div><br>
+        <a href="./index2.html" class="btn btn-primary">Finalizar Compra</a>
+
+    </div>
+
+    <script src="./assets/js/logica.js"></script>
+    <script src="./assets/js/BootstrapJS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

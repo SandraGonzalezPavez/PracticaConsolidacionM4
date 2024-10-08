@@ -1,0 +1,63 @@
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: aquamarine;
+}
+
+
+.card{
+    display: inline-block;
+    width: 18rem;
+    height: 900px;
+    vertical-align: top;
+    text-align: center;
+    margin-left: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+}
+.card img{
+    width: 150px;
+    height: 200px;
+    object-fit:fill;
+    transition: transform 2s;
+}
+.card:hover img{
+    transform: scale(1.3);
+}
+
+#card-total{
+width: 500px;
+height: auto;
+vertical-align: top;
+    position:relative;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+#img-total{
+    width: 300px;
+    height: auto;
+}
+
+.input-group{
+    margin: 0 auto;
+}
+.finalizar{
+   justify-content: center;
+   text-align: center;
+   margin-top:50px;
+   
+}
+#imgFinalizar{
+    width:600px;
+    height: 500px;
+    margin-top: 50px;
+}
+
+h1{
+    animation: 3s infinite alternate slidein
+}
